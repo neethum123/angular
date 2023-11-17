@@ -1,0 +1,23 @@
+h1{
+    background-color: blue;
+}
+
+
+
+.todo{
+    
+    background-color: pink;
+    height: 100vh;
+}
+.box{
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: aqua;
+    box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow:scroll;
+}
+
+i{
+    cursor: pointer;
+}
