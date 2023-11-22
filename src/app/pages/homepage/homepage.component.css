@@ -18,6 +18,15 @@ h1{
     overflow:scroll;
 }
 
-i{
+i,addinput{
     cursor: pointer;
+}
+input[type=checkbox]:checked+p.strikethrough{
+    text-decoration: line-through;
+    color: red;
+}
+.pstrikethrough
+{
+    text-decoration: line-through;
+    color:red;
 }

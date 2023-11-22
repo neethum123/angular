@@ -7,7 +7,8 @@
 
 
     <div class="addInput my-5">
-        <input type="text">
+        <input class="inputAdd" type="text"[(ngModel)]="title"/>&nbsp;
+        <button class="" (click)="add()">ADD</button>
 
     </div>
 
@@ -17,9 +18,9 @@
         <ul class="list">
             @for(item of todos;track item.id){
             <li class="d-flex justify-content-between">
-                <input type="checkbox">
-                <p>{{item.title}}asdftyuiojhgfdfghjk</p>
-                <i class="bi bi-trash text-danger"></i>
+                <input type="checkbox" name="packersOff" value="1">
+                <p id="title" class="strikethrough" [ngClass]="item.completed?'pstrikethrough':'null'">{{item.id}},{{item.title}}</p>
+                <i class="bi bi-trash text-danger" (click)="del(item)"></i>
             </li>
         }
         </ul>
